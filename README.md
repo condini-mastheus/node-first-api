@@ -1,2 +1,2 @@
-# node-first-api
-First api, solo coding in node js
+# Node First Api
+Creating API in Nodejs
