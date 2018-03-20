@@ -1,0 +1,24 @@
+{
+  "name": "node-first-api",
+  "version": "1.0.0",
+  "description": "This is a solo coding to learning node programing language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condini-mastheus/node-first-api.git"
+  },
+  "keywords": [
+    "learning",
+    "node",
+    "api"
+  ],
+  "author": "Matheus Condini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/condini-mastheus/node-first-api/issues"
+  },
+  "homepage": "https://github.com/condini-mastheus/node-first-api#readme"
+}
