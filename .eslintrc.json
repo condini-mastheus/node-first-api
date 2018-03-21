@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "linebreak-style": "off",
+        "indent": ["error", "tab"],
+        "import/no-dynamic-require": "warn",
+        "global-require": "warn",
+        "no-tabs": "off"
+    }
+}
