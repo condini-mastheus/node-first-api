@@ -90,4 +90,3 @@ $RECYCLE.BIN/
 # Node first api
 # =========================
 .config
-src/db/index.js
