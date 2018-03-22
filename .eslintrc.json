@@ -5,6 +5,8 @@
         "indent": ["error", "tab"],
         "import/no-dynamic-require": "warn",
         "global-require": "warn",
-        "no-tabs": "off"
+        "no-tabs": "off",
+        "prefer-destructuring": "warn",
+        "consistent-return": "off"
     }
 }
