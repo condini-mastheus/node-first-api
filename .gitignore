@@ -87,6 +87,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Todo Udemy App
+# Node first api
 # =========================
 .config
+src/db/index.js
