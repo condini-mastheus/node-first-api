@@ -28,6 +28,7 @@ router.post('/register', async (req, res) => {
 
 		// remove password from user object
 		user.password = undefined;
+		user.createAt = undefined;
 
 		return res.send({
 			user,
@@ -54,6 +55,7 @@ router.post('/authenticate', async (req, res) => {
 
 		// remove password from user object
 		user.password = undefined;
+		user.createAt = undefined;
 
 		return res.send({
 			user,

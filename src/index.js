@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const controllers = require('./app/controllers/');
+const helmet = require('helmet');
 
 const app = express();
 
@@ -8,6 +9,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const port = process.env.PORT || 3000;
+
+app.use(helmet());
 
 app.get('/', (req, res) => {
 	res.send('<code>Version: 1.0.0</code>');
