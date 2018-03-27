@@ -3,7 +3,6 @@ const bycrpyt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('../models/user');
-const authConfig = require('../../config/auth');
 
 const router = express.Router();
 
@@ -11,8 +10,8 @@ const router = express.Router();
 function generateToken(params = {}) {
 	return jwt.sign(
 		params,
-		authConfig.jwt.SECRET,
-		{ expiresIn: authConfig.jwt.EXPIRES },
+		process.env.JWT_SECRET,
+		{ expiresIn: process.env.JWT_EXPIRES },
 	);
 }
 

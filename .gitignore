@@ -90,3 +90,8 @@ $RECYCLE.BIN/
 # Node first api
 # =========================
 .config
+
+# Sensitive data
+# =========================
+.env
+.env.dev

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:node": "eslint --config=./.eslintrc *.js scripts/*.js"
+    "start-dev": "set NODE_ENV=dev&& nodemon src",
+    "start-production": "node src"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
     "fs": "^0.0.1-security",

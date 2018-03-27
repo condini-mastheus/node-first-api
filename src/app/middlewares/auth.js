@@ -1,7 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-const authConfig = require('../../config/auth');
-
 module.exports = async (req, res, next) => {
 	const authorization = req.headers.authorization;
 
@@ -21,7 +19,7 @@ module.exports = async (req, res, next) => {
 		return res.status(400).send({ error: 'Token malformed' });
 	}
 
-	await jwt.verify(token, authConfig.jwt.SECRET, (err, decoded) => {
+	await jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
 		if (err) {
 			return res.status(401).send({ error: 'Token invalid' });
 		}
